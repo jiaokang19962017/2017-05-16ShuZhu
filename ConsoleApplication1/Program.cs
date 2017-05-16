@@ -182,9 +182,18 @@ namespace ConsoleApplication1
                int[] arry2 = (int[])arry1.Clone();*/
 
             //复制一部分数组给另一个数组
-            int[] a = { 1, 2, 3 };
-            int[] b = new int[a.Length];
-            Array.Copy(a,0,b,0,a.Length);
+            /* int[] a = { 1, 2, 3 };
+             int[] b = new int[a.Length];
+             Array.Copy(a,0,b,0,a.Length);*/
+
+            //copyto
+            /* int[] a = { 1, 2, 3 };
+             int[] b = new int[a.Length];
+             b.CopyTo(a,0);*/
+
+            //数组反转
+            string[] str = { "逆","序","输","出" };
+            Array.Reverse(str);
             #endregion,
         }
     }

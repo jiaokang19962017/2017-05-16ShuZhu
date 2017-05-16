@@ -154,21 +154,38 @@ namespace ConsoleApplication1
 
             #region 交错数组遍历
 
-            int[][] arry = new int[2][];
-            arry[0] = new int[]{ 1,2};
-            arry[1] = new int[] { 3, 4,5 };
+            /*  int[][] arry = new int[2][];
+              arry[0] = new int[]{ 1,2};
+              arry[1] = new int[] { 3, 4,5 };
 
-            int index = 0;
-            foreach (int[] arry1 in arry)
-            {
-                index++;
-                Console.WriteLine("第{0}个数组",index);
-                foreach (int  item in arry1)
-                {
-                    Console.WriteLine(item+" ");
-                }
-            }
+              int index = 0;
+              foreach (int[] arry1 in arry)
+              {
+                  index++;
+                  Console.WriteLine("第{0}个数组",index);
+                  foreach (int  item in arry1)
+                  {
+                      Console.WriteLine(item+" ");
+                  }
+              }*/
             #endregion
+
+
+
+            #region 数组操作
+            //清空数组
+            /*string[] arry = new string[3] { "c", "c#", "c++" };
+            Array.Clear(arry,0,1);*/
+
+            //数组浅复制
+            /*   int[] arry1 = { 1, 2 };
+               int[] arry2 = (int[])arry1.Clone();*/
+
+            //复制一部分数组给另一个数组
+            int[] a = { 1, 2, 3 };
+            int[] b = new int[a.Length];
+            Array.Copy(a,0,b,0,a.Length);
+            #endregion,
         }
     }
 }

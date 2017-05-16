@@ -45,33 +45,41 @@ namespace ConsoleApplication1
               Console.WriteLine("数组所有元素之和是:{0}",sum);*/
 
             //输入7名学生成绩,分别求出最高分,最低分,平均分
-            float[] score = new float[7];
-            for (int i = 0; i < score.Length; i++)
-            {
-                score[i] = Convert.ToSingle(Console.ReadLine());
-            }
-            float sum = 0;
-            float avg = 0;
-            float max = score[0];
-            float min = score[0];
-            for (int i = 0; i < score.Length; i++)
-            {
-                sum = sum + score[i];
-                if (max < score[i])
-                {
-                    max = score[i];
-                }
-                if (min > score[i])
-                {
-                    min = score[i];
-                }
-            }
-            avg = sum / score.Length;
-            Console.WriteLine("最高分是:{0},最低分是:{1},平均分是:{2}",max,min,avg);
-
+            /* float[] score = new float[7];
+             for (int i = 0; i < score.Length; i++)
+             {
+                 score[i] = Convert.ToSingle(Console.ReadLine());
+             }
+             float sum = 0;
+             float avg = 0;
+             float max = score[0];
+             float min = score[0];
+             for (int i = 0; i < score.Length; i++)
+             {
+                 sum = sum + score[i];
+                 if (max < score[i])
+                 {
+                     max = score[i];
+                 }
+                 if (min > score[i])
+                 {
+                     min = score[i];
+                 }
+             }
+             avg = sum / score.Length;
+             Console.WriteLine("最高分是:{0},最低分是:{1},平均分是:{2}",max,min,avg);
+ */
 
             #endregion
 
+
+            #region foreach语句来遍历数组
+            string[] strArray = new string[3] { "a", "b", "c" };
+            foreach (string str in strArray)
+            {
+                Console.WriteLine(str);
+            }
+            #endregion
         }
     }
 }

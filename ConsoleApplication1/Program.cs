@@ -34,6 +34,7 @@ namespace ConsoleApplication1
               string[] arr2 = { "c语言", "c++", "c#", "java" };
               string[] arr3 = new string[] { "c语言", "c++", "c#", "java" };*/
 
+            //计算1,2,3,4,5,6,7,8,9,10的和
             /*  int[] arry = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
               int sum = 0;
               for (int i = 0; i < arry.Length; i++)

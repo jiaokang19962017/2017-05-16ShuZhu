@@ -80,6 +80,27 @@ namespace ConsoleApplication1
                 Console.WriteLine(str);
             }
             #endregion
+
+            #region 二维数组声明
+          /*  int[,] arr1 = new int[2, 3] { { 1, 2, 3 }, { 1, 2, 3 } };
+            int[,] arr2 = new int[,] { { 1, 2 }, { 3, 4 } };
+            int[,] arr3 = { { 1, 2 }, { 3, 4 } };
+
+            int[,] array = new int[7, 2] { { 1, 90 }, { 2, 82 }, { 3, 100 }, { 4, 51 }, { 5, 60 }, { 6,100}, { 7, 87 } };
+            */
+            #endregion
+
+            #region foreach二维数组遍历
+            int[,] numArray = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+            int sum = 0;
+            foreach (int item in numArray)
+            {
+                sum += item;
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("二维数组之和:{0}",sum);
+            #endregion
+
         }
     }
 }

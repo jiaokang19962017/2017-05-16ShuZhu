@@ -74,33 +74,43 @@ namespace ConsoleApplication1
 
 
             #region foreach语句来遍历数组
-            string[] strArray = new string[3] { "a", "b", "c" };
+          /*  string[] strArray = new string[3] { "a", "b", "c" };
             foreach (string str in strArray)
             {
                 Console.WriteLine(str);
-            }
+            }*/
             #endregion
 
             #region 二维数组声明
-          /*  int[,] arr1 = new int[2, 3] { { 1, 2, 3 }, { 1, 2, 3 } };
-            int[,] arr2 = new int[,] { { 1, 2 }, { 3, 4 } };
-            int[,] arr3 = { { 1, 2 }, { 3, 4 } };
+            /*  int[,] arr1 = new int[2, 3] { { 1, 2, 3 }, { 1, 2, 3 } };
+              int[,] arr2 = new int[,] { { 1, 2 }, { 3, 4 } };
+              int[,] arr3 = { { 1, 2 }, { 3, 4 } };
 
-            int[,] array = new int[7, 2] { { 1, 90 }, { 2, 82 }, { 3, 100 }, { 4, 51 }, { 5, 60 }, { 6,100}, { 7, 87 } };
-            */
+              int[,] array = new int[7, 2] { { 1, 90 }, { 2, 82 }, { 3, 100 }, { 4, 51 }, { 5, 60 }, { 6,100}, { 7, 87 } };
+              */
             #endregion
 
             #region foreach二维数组遍历
-            int[,] numArray = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
-            int sum = 0;
-            foreach (int item in numArray)
-            {
-                sum += item;
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("二维数组之和:{0}",sum);
+            /* int[,] numArray = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+             int sum = 0;
+             foreach (int item in numArray)
+             {
+                 sum += item;
+                 Console.WriteLine(item);
+             }
+             Console.WriteLine("二维数组之和:{0}",sum);*/
             #endregion
 
+            #region for循环遍历二维数组
+            int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
+            for (int i = 0; i < 3; i++) {//外层控制行
+                for (int j = 0; j < 2; j++)//内层控制列
+                {
+                    Console.WriteLine(numArray[i,j]);
+                }
+                Console.WriteLine();
+            }
+            #endregion
         }
     }
 }

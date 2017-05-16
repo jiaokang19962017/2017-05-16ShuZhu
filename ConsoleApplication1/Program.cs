@@ -111,14 +111,63 @@ namespace ConsoleApplication1
                   Console.WriteLine();
               }*/
 
-         /*   int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
-               for (int i = 0; i < numArray.GetLength(0); i++) {//外层控制行
-                   for (int j = 0; j < numArray.GetLength(1); j++)//内层控制列
-                   {
-                       Console.WriteLine(numArray[i,j]+" ");
-                   }
-                   Console.WriteLine();
-               }*/
+            /*   int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
+                  for (int i = 0; i < numArray.GetLength(0); i++) {//外层控制行
+                      for (int j = 0; j < numArray.GetLength(1); j++)//内层控制列
+                      {
+                          Console.WriteLine(numArray[i,j]+" ");
+                      }
+                      Console.WriteLine();
+                  }*/
+            #endregion
+
+            #region 酒店练习
+            /*  int[,] room = new int[3, 4] { { 101, 102, 103, 104 }, { 201, 202, 203, 204 }, { 301, 302, 303, 304 } };
+              /*for (int i = 0; i < room.GetLength(0); i++)
+              {
+                  Console.WriteLine("{0}",i+1);
+                  for(int j = 0; j< room.GetLength(1); j++)
+                  {
+                      Console.WriteLine(room[i,j]);
+                  }
+              }*/
+            /*  foreach (int item in room)
+              {
+                  Console.WriteLine(item);
+              }*/
+
+            #endregion
+
+            #region 交错数组
+            /*   int[][] arry = new int[4][];
+               arry[0] = new int[] { 1,,3,5,7,9};
+               arry[1] = new int[] { 0,2};
+               arry[2] = new int[] { 5,11,26};
+               arry[3] = new int[] { 91,3,56,67,32};
+               //以上只是初始化
+             /*  arry[0][0] = 1;//第一行的第一个
+               arry[0][1] = 2;//第一行的第二个
+               arry[0][2] = 3;
+
+               arry[3][2] = 3;//第4行第3个*/
+            #endregion
+
+            #region 交错数组遍历
+
+            int[][] arry = new int[2][];
+            arry[0] = new int[]{ 1,2};
+            arry[1] = new int[] { 3, 4,5 };
+
+            int index = 0;
+            foreach (int[] arry1 in arry)
+            {
+                index++;
+                Console.WriteLine("第{0}个数组",index);
+                foreach (int  item in arry1)
+                {
+                    Console.WriteLine(item+" ");
+                }
+            }
             #endregion
         }
     }

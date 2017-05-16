@@ -74,11 +74,11 @@ namespace ConsoleApplication1
 
 
             #region foreach语句来遍历数组
-          /*  string[] strArray = new string[3] { "a", "b", "c" };
-            foreach (string str in strArray)
-            {
-                Console.WriteLine(str);
-            }*/
+            /*  string[] strArray = new string[3] { "a", "b", "c" };
+              foreach (string str in strArray)
+              {
+                  Console.WriteLine(str);
+              }*/
             #endregion
 
             #region 二维数组声明
@@ -102,14 +102,23 @@ namespace ConsoleApplication1
             #endregion
 
             #region for循环遍历二维数组
-            int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
-            for (int i = 0; i < 3; i++) {//外层控制行
-                for (int j = 0; j < 2; j++)//内层控制列
-                {
-                    Console.WriteLine(numArray[i,j]);
-                }
-                Console.WriteLine();
-            }
+            /*  int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
+              for (int i = 0; i < 3; i++) {//外层控制行
+                  for (int j = 0; j < 2; j++)//内层控制列
+                  {
+                      Console.WriteLine(numArray[i,j]+" ");
+                  }
+                  Console.WriteLine();
+              }*/
+
+         /*   int[,] numArray = new int[3, 2] { { 1, 2 }, { 4, 5 }, { 7,8} };
+               for (int i = 0; i < numArray.GetLength(0); i++) {//外层控制行
+                   for (int j = 0; j < numArray.GetLength(1); j++)//内层控制列
+                   {
+                       Console.WriteLine(numArray[i,j]+" ");
+                   }
+                   Console.WriteLine();
+               }*/
             #endregion
         }
     }
